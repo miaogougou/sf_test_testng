@@ -81,7 +81,7 @@ public class getAuditPlanListTest {
     @Test(groups = { "BaseCase"},dependsOnMethods = { "GetAuditPlanListAll_Succ" })
     public void GetAuditPlanListOne_Fail() throws IOException{
         String Dataone=resultCheck("123",null);
-        Assert.assertEquals("null",Dataone);
+        Assert.assertEquals(null,Dataone);
     }
     
     @Parameters({"customid","customname"})

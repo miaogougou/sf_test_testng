@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
+<suite name="postAuditCenterTest" >
 <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter" />
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 </listeners>
-  <test name="Testauditcenter" verbose="2">
+  <test name="w_postAuditCenterTest" verbose="2">
      <groups>
 	    <run>
 		<exclude name="BaseCase" />
