@@ -3,6 +3,7 @@
 <suite name="Suite" >
   <suite-files>
       <suite-file path="webxml/LoginTest.xml"></suite-file>
+      <suite-file path="seleniumxml/LoginTest.xml"></suite-file>
   </suite-files>
   
 </suite> <!-- Suite -->
