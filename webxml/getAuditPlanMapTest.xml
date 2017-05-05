@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+</listeners>
+  <test name="w_LoginTest" verbose="2">
+     <groups>
+	    <run>
+		<exclude name="BaseCase" />
+	    </run>
+	</groups>
+    <classes>  
+    <class name="com.ipharmacare.sf.webtest.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="w_getAuditPlanMapTest" verbose="2" >
+    <classes>  
+    <class name="com.ipharmacare.sf.webtest.getAuditPlanMapTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

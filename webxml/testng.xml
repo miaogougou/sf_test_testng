@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <suite-files>
+      <suite-file path="LoginTest.xml"></suite-file>
+      <suite-file path="LogoutTest.xml"></suite-file>
+      <suite-file path="delAuditPlanTest.xml"></suite-file>
+      <suite-file path="getAuditPlanListTest.xml"></suite-file>
+      <suite-file path="getAuditPlanMapTest.xml"></suite-file>
+      <suite-file path="getCheckAuditPlanNameTest.xml"></suite-file>
+      <suite-file path="postAuditCenterTest.xml"></suite-file>
+      <suite-file path="postAuditPlanTest.xml"></suite-file>   
+  </suite-files>
+  
+</suite> <!-- Suite -->
