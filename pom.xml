@@ -13,7 +13,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
      <!-- 解决控制台输出乱码问题 -->
     <argLine>-Dfile.encoding=UTF-8</argLine>
-    <xmlFileName>LoginTest.xml</xmlFileName>
+    <xmlFileName>testng.xml</xmlFileName>
   </properties>
   <!-- maven 引用依赖不同的jar -->
   <dependencies>
@@ -98,7 +98,7 @@ test，只在测试时使用，用于编译和运行测试代码。不会随项�
      <version>2.17</version>
      <configuration>
      <suiteXmlFiles>
-     <suiteXmlFile>LoginTest.xml</suiteXmlFile>
+     <suiteXmlFile>testng.xml</suiteXmlFile>
      </suiteXmlFiles>
 <!-- <systemPropertyVariables>标签设置为false为了让log中的html在页面上正常显示,避免直接显示为html字符串 -->
      <systemPropertyVariables>
