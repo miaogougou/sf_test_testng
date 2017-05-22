@@ -3,6 +3,6 @@
 <suite name="Suite_all" >
   <suite-files>
       <suite-file path="webxml/testng.xml"></suite-file>
-      <!--suite-file path="seleniumxml/testng.xml"></suite-file>-->
+      <!--suite-file path="seleniumxml/testng.xml"></suite-file-->
   </suite-files> 
 </suite> <!-- Suite -->

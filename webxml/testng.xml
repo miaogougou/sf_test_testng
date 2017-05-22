@@ -2,13 +2,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite_webtest" >
   <suite-files>
-      <suite-file path="LoginTest.xml"></suite-file>
+      <!--suite-file path="LoginTest.xml"></suite-file>
       <suite-file path="LogoutTest.xml"></suite-file>
       <suite-file path="delAuditPlanTest.xml"></suite-file>
       <suite-file path="getAuditPlanListTest.xml"></suite-file>
       <suite-file path="getAuditPlanMapTest.xml"></suite-file>
       <suite-file path="getCheckAuditPlanNameTest.xml"></suite-file>
       <suite-file path="postAuditCenterTest.xml"></suite-file>
-      <suite-file path="postAuditPlanTest.xml"></suite-file>   
+      <suite-file path="postAuditPlanTest.xml"></suite-file-->   
+      <suite-file path="getCheckRuleTest.xml"></suite-file>   
+      <suite-file path="getInsttipsTest.xml"></suite-file>   
+      <suite-file path="getMsgOptRecipeListTest.xml"></suite-file>   
+      <suite-file path="getMsgOptPatientListTest.xml"></suite-file>   
+      <suite-file path="getOptRecipeListTest.xml"></suite-file>   
+      <suite-file path="getAnalysisTypeTest.xml"></suite-file>   
+      <suite-file path="getAuditDoctorListTest.xml"></suite-file>   
+      <suite-file path="getDocGroupListTest.xml"></suite-file>   
+      <suite-file path="getExportListTest.xml"></suite-file>   
+      <suite-file path="getDeleteExportListTest.xml"></suite-file>   
+      <suite-file path="getWaitAuditIptListTest.xml"></suite-file>   
+      <suite-file path="getIptListTest.xml"></suite-file>   
+      <suite-file path="getWorkStatisticsTest.xml"></suite-file>   
+      <suite-file path="getWorkStatisticsExportTest.xml"></suite-file>   
   </suite-files> 
 </suite> <!-- Suite -->
