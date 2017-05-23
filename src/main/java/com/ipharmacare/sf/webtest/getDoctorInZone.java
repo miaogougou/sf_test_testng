@@ -47,13 +47,13 @@ import org.apache.http.util.EntityUtils;
 import com.ipharmacare.sf.webtest.common.*;
 /**
  * 
- * @ClassName: getWaitAuditIptList 
+ * @ClassName: getDoctorInZone 
  * @Description: 获取当前所有的审方方案列表
  * @author DaiJunjun daijj@ipharmacare.net
  * @date 2017年4月19日 上午11:30:19 
  *
  */
-public class getWaitAuditIptList {	
+public class getDoctorInZone {	
 	private String url="";
 	/**
 	 * @Title: geturl 
@@ -80,7 +80,7 @@ public class getWaitAuditIptList {
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
                 .build();
-        url=GetRequestUrl.getRequestUrl("/api/v1/ipt/waitAuditIptList"); 
+        url=GetRequestUrl.getRequestUrl("/api/v1/doctorInZone"); 
         
         try {
         	HttpUriRequest req = RequestBuilder.get()
@@ -90,7 +90,7 @@ public class getWaitAuditIptList {
             try {
             	HttpEntity entity = response.getEntity();
             	
-                System.out.println("waitAuditIptList form get: " + response.getStatusLine());
+                System.out.println("doctorInZone form get: " + response.getStatusLine());
                 String Results=EntityUtils.toString(entity);
                 //查看cookies 
                 System.out.println("get of cookies:");

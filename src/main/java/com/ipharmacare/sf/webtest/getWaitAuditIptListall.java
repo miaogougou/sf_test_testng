@@ -53,7 +53,7 @@ import com.ipharmacare.sf.webtest.common.*;
  * @date 2017年4月19日 上午11:30:19 
  *
  */
-public class getWaitAuditIptList {	
+public class getWaitAuditIptListall {	
 	private String url="";
 	/**
 	 * @Title: geturl 
@@ -80,7 +80,7 @@ public class getWaitAuditIptList {
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
                 .build();
-        url=GetRequestUrl.getRequestUrl("/api/v1/ipt/waitAuditIptList"); 
+        url=GetRequestUrl.getRequestUrl("/api/v1/ipt/all/waitAuditIptList"); 
         
         try {
         	HttpUriRequest req = RequestBuilder.get()

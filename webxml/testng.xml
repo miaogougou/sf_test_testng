@@ -9,7 +9,7 @@
       <suite-file path="getAuditPlanMapTest.xml"></suite-file>
       <suite-file path="getCheckAuditPlanNameTest.xml"></suite-file>
       <suite-file path="postAuditCenterTest.xml"></suite-file>
-      <suite-file path="postAuditPlanTest.xml"></suite-file-->   
+	  <suite-file path="postAuditPlanTest.xml"></suite-file>
       <suite-file path="getCheckRuleTest.xml"></suite-file>   
       <suite-file path="getInsttipsTest.xml"></suite-file>   
       <suite-file path="getMsgOptRecipeListTest.xml"></suite-file>   
@@ -20,9 +20,28 @@
       <suite-file path="getDocGroupListTest.xml"></suite-file>   
       <suite-file path="getExportListTest.xml"></suite-file>   
       <suite-file path="getDeleteExportListTest.xml"></suite-file>   
-      <suite-file path="getWaitAuditIptListTest.xml"></suite-file>   
       <suite-file path="getIptListTest.xml"></suite-file>   
       <suite-file path="getWorkStatisticsTest.xml"></suite-file>   
       <suite-file path="getWorkStatisticsExportTest.xml"></suite-file>   
+      <suite-file path="getPeriodTest.xml"></suite-file>   
+      <suite-file path="getIptMsgPatientListTest.xml"></suite-file>   
+      <suite-file path="getWaitAuditIptListTest.xml"></suite-file>   
+      <suite-file path="getWaitAuditIptListallTest.xml"></suite-file>   
+      <suite-file path="getCurrentUserTest.xml"></suite-file>   
+      <suite-file path="getDeptTreeTest.xml"></suite-file>   
+      <suite-file path="getDeptListTest.xml"></suite-file>   
+      <suite-file path="getChildrenDeptTest.xml"></suite-file>   
+      <suite-file path="getDoctorInZoneTest.xml"></suite-file>   
+      <suite-file path="getChildDrugCategoryTest.xml"></suite-file>   
+      <suite-file path="getDrugCategoryTest.xml"></suite-file>   
+      <suite-file path="getDrugListTest.xml"></suite-file>   
+      <suite-file path="getProductListTest.xml"></suite-file-->   
+      <suite-file path="getChildDrugPropertyTest.xml"></suite-file>   
+      <suite-file path="getDrugPropertyTreeTest.xml"></suite-file>   
+      <suite-file path="getDrugPropertyListTest.xml"></suite-file>   
+      <suite-file path="getChildIcd10Test.xml"></suite-file>   
+      <suite-file path="getIcd10Test.xml"></suite-file>   
+      <suite-file path="getpayTypeListTest.xml"></suite-file>   
+      <suite-file path="getZoneListTest.xml"></suite-file>   
   </suite-files> 
 </suite> <!-- Suite -->
