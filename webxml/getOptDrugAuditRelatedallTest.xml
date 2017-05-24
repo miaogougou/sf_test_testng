@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OptDrugAuditRelatedallTest" >
+  <listeners>
+     <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+  <test name="w_OptDrugAuditRelatedallTest" verbose="2">
+	 <parameter name="optRecipeId" value="1" />
+	 <parameter name="zoneId" value="1" />
+	 <parameter name="productId" value="1" />
+    <classes> 
+    <class name="com.ipharmacare.sf.webtest.LoginTest">
+        <methods>
+              <include name="login_Succ"></include>
+         </methods>
+    </class>  
+    <class name="com.ipharmacare.sf.webtest.getOptDrugAuditRelatedallTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

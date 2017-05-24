@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AuditAgreeTest" >
+  <listeners>
+     <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+  <test name="w_AuditAgreeTest" verbose="2">
+	 <parameter name="id" value="150010" />
+	 <parameter name="auditType" value="3" />
+    <classes> 
+    <class name="com.ipharmacare.sf.webtest.LoginTest">
+        <methods>
+              <include name="login_Succ"></include>
+         </methods>
+    </class>  
+    <class name="com.ipharmacare.sf.webtest.getAuditAgreeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

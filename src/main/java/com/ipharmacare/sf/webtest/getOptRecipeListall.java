@@ -53,7 +53,7 @@ import com.ipharmacare.sf.webtest.common.*;
  * @date 2017年4月19日 上午11:30:19 
  *
  */
-public class getOptRecipeList {	
+public class getOptRecipeListall {	
 	private String url="";
 	/**
 	 * @Title: geturl 
@@ -80,7 +80,7 @@ public class getOptRecipeList {
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
                 .build();
-        url=GetRequestUrl.getRequestUrl("/api/v1/opt/optRecipeList"); 
+        url=GetRequestUrl.getRequestUrl("/api/v1/opt/all/optRecipeList"); 
         
         try {
         	HttpUriRequest req = RequestBuilder.get()
@@ -90,7 +90,7 @@ public class getOptRecipeList {
             try {
             	HttpEntity entity = response.getEntity();
             	
-                System.out.println("optRecipeList form get: " + response.getStatusLine());
+                System.out.println("optRecipeListall form get: " + response.getStatusLine());
                 String Results=EntityUtils.toString(entity);
                 //查看cookies 
                 System.out.println("get of cookies:");

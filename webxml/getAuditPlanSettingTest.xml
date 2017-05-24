@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AuditPlanSettingTest" >
+  <listeners>
+     <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+  <test name="w_AuditPlanSettingTest" verbose="2">
+	  <parameter name="ids" value="117001"></parameter>
+	  <parameter name="ids1" value="11"></parameter>
+    <classes> 
+    <class name="com.ipharmacare.sf.webtest.LoginTest">
+        <methods>
+              <include name="login_Succ"></include>
+         </methods>
+    </class>  
+	<class name="com.ipharmacare.sf.webtest.getAuditPlanSettingTest">
+    </class>
+	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

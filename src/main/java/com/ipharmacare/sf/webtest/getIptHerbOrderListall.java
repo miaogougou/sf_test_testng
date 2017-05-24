@@ -47,13 +47,13 @@ import org.apache.http.util.EntityUtils;
 import com.ipharmacare.sf.webtest.common.*;
 /**
  * 
- * @ClassName: getOptRecipeList 
- * @Description: 获取当前所有的审方方案列表
+ * @ClassName: getIptHerbOrderListall 
+ * @Description: 获取草药医嘱列表
  * @author DaiJunjun daijj@ipharmacare.net
  * @date 2017年4月19日 上午11:30:19 
  *
  */
-public class getOptRecipeList {	
+public class getIptHerbOrderListall {	
 	private String url="";
 	/**
 	 * @Title: geturl 
@@ -75,22 +75,23 @@ public class getOptRecipeList {
      * @return String    返回类型 
      * @throws
      */
-    public String getHttpRespone() throws Exception {
+    public String getHttpRespone(String id) throws Exception {
     	BasicCookieStore cookieStore = RequestCookiestore.getRequestCookies();
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
                 .build();
-        url=GetRequestUrl.getRequestUrl("/api/v1/opt/optRecipeList"); 
+        url=GetRequestUrl.getRequestUrl("/api/v1/ipt/all/herbOrderList"); 
         
         try {
         	HttpUriRequest req = RequestBuilder.get()
                     .setUri(new URI(url))
+                    .addParameter("id", id)
                     .build();
         	CloseableHttpResponse response = httpclient.execute(req);
             try {
             	HttpEntity entity = response.getEntity();
             	
-                System.out.println("optRecipeList form get: " + response.getStatusLine());
+                System.out.println("herbOrderListall form get: " + response.getStatusLine());
                 String Results=EntityUtils.toString(entity);
                 //查看cookies 
                 System.out.println("get of cookies:");
