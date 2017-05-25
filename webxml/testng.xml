@@ -109,5 +109,6 @@
       <suite-file path="getIptInfoAggregationTest.xml"></suite-file-->   
       <suite-file path="getAuditAgreeTest.xml"></suite-file>   
       <suite-file path="getAuditRefuseTest.xml"></suite-file>   
+      <suite-file path="putAlertMssageStatusTest.xml"></suite-file>   
   </suite-files> 
 </suite> <!-- Suite -->
