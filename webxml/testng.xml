@@ -106,9 +106,18 @@
       <suite-file path="getIptImageListTest.xml"></suite-file>   
       <suite-file path="getIptPathologicalListTest.xml"></suite-file>   
       <suite-file path="getIptDrugAuditRelatedTest.xml"></suite-file>   
-      <suite-file path="getIptInfoAggregationTest.xml"></suite-file-->   
+      <suite-file path="getIptInfoAggregationTest.xml"></suite-file>   
       <suite-file path="getAuditAgreeTest.xml"></suite-file>   
       <suite-file path="getAuditRefuseTest.xml"></suite-file>   
+      <suite-file path="delExportTest.xml"></suite-file>   
+      <suite-file path="delReplyTemplateTest.xml"></suite-file>   
       <suite-file path="putAlertMssageStatusTest.xml"></suite-file>   
+      <suite-file path="putAlertMsgDpRemarkTest.xml"></suite-file>   
+      <suite-file path="putOpenAlertMsgDpRemarkTest.xml"></suite-file>   
+      <suite-file path="putEndOfAuditTest.xml"></suite-file>   
+      <suite-file path="putAuditBeatingTest.xml"></suite-file>   
+      <suite-file path="putReleaseAuditingTest.xml"></suite-file>   
+      <suite-file path="putAuditingTest.xml"></suite-file-->   
+      <suite-file path="putAuditPlanTest.xml"></suite-file>   
   </suite-files> 
 </suite> <!-- Suite -->

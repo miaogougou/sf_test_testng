@@ -47,13 +47,13 @@ import org.apache.http.util.EntityUtils;
 import com.ipharmacare.sf.webtest.common.*;
 /**
  * 
- * @ClassName: putAlertMssageStatus 
- * @Description: 警示信息申请状态，确认待查操作
+ * @ClassName: putAuditing 
+ * @Description: 设置任务的审核状态
  * @author DaiJunjun daijj@ipharmacare.net
  * @date 2017年4月19日 上午11:30:19 
  *
  */
-public class putAlertMssageStatus {	
+public class putAuditing {	
 	private String url="";
 	/**
 	 * @Title: geturl 
@@ -75,25 +75,22 @@ public class putAlertMssageStatus {
      * @return String    返回类型 
      * @throws
      */
-    public String getHttpRespone(String messageId,String status) throws Exception {
+    public String getHttpRespone(String Ids) throws Exception {
     	BasicCookieStore cookieStore = RequestCookiestore.getRequestCookies();
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
                 .build();
-        url=GetRequestUrl.getRequestUrl("/api/v1/alertMssageStatus"+"?messageId="+messageId+"&status="+status); 
-        //url=GetRequestUrl.getRequestUrl("/api/v1/alertMssageStatus"); 
+        url=GetRequestUrl.getRequestUrl("/api/v1/auditing"+"?ids="+Ids); 
         
         try {
         	HttpUriRequest req = RequestBuilder.put()
                     .setUri(new URI(url))
-                   //.addParameter("messageId", messageId)
-                   //.addParameter("status", status)
                     .build();
         	CloseableHttpResponse response = httpclient.execute(req);
             try {
             	HttpEntity entity = response.getEntity();
             	
-                System.out.println("alertMssageStatus form get: " + response.getStatusLine());
+                System.out.println("Auditing form get: " + response.getStatusLine());
                 String Results=EntityUtils.toString(entity);
                 //查看cookies 
                 System.out.println("get of cookies:");

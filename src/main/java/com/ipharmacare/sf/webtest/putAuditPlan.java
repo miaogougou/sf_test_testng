@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
+import java.nio.charset.Charset;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -37,9 +38,11 @@ import java.util.List;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPut;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.client.methods.RequestBuilder;
 import org.apache.http.cookie.Cookie;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
@@ -47,13 +50,13 @@ import org.apache.http.util.EntityUtils;
 import com.ipharmacare.sf.webtest.common.*;
 /**
  * 
- * @ClassName: putAlertMssageStatus 
- * @Description: 警示信息申请状态，确认待查操作
+ * @ClassName: putAuditPlan 
+ * @Description: 打开警示信息描述按钮
  * @author DaiJunjun daijj@ipharmacare.net
  * @date 2017年4月19日 上午11:30:19 
  *
  */
-public class putAlertMssageStatus {	
+public class putAuditPlan {	
 	private String url="";
 	/**
 	 * @Title: geturl 
@@ -75,25 +78,23 @@ public class putAlertMssageStatus {
      * @return String    返回类型 
      * @throws
      */
-    public String getHttpRespone(String messageId,String status) throws Exception {
+    public String getHttpRespone(String id,String body) throws Exception {
     	BasicCookieStore cookieStore = RequestCookiestore.getRequestCookies();
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
                 .build();
-        url=GetRequestUrl.getRequestUrl("/api/v1/alertMssageStatus"+"?messageId="+messageId+"&status="+status); 
-        //url=GetRequestUrl.getRequestUrl("/api/v1/alertMssageStatus"); 
+        url=GetRequestUrl.getRequestUrl("/api/v1/auditPlan/"+id); 
         
         try {
-        	HttpUriRequest req = RequestBuilder.put()
-                    .setUri(new URI(url))
-                   //.addParameter("messageId", messageId)
-                   //.addParameter("status", status)
-                    .build();
-        	CloseableHttpResponse response = httpclient.execute(req);
+            HttpPut httpput = new HttpPut(url);
+            httpput.addHeader("Content-type","application/json; charset=utf-8");  
+            httpput.setHeader("Accept", "application/json");  
+            httpput.setEntity(new StringEntity(body, Charset.forName("UTF-8")));  
+            CloseableHttpResponse response = httpclient.execute(httpput);
             try {
             	HttpEntity entity = response.getEntity();
             	
-                System.out.println("alertMssageStatus form get: " + response.getStatusLine());
+                System.out.println("AuditPlan form put: " + response.getStatusLine());
                 String Results=EntityUtils.toString(entity);
                 //查看cookies 
                 System.out.println("get of cookies:");
