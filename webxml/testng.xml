@@ -117,7 +117,18 @@
       <suite-file path="putEndOfAuditTest.xml"></suite-file>   
       <suite-file path="putAuditBeatingTest.xml"></suite-file>   
       <suite-file path="putReleaseAuditingTest.xml"></suite-file>   
-      <suite-file path="putAuditingTest.xml"></suite-file-->   
+      <suite-file path="putAuditingTest.xml"></suite-file>   
       <suite-file path="putAuditPlanTest.xml"></suite-file>   
+      <suite-file path="getAuditConfigTest.xml"></suite-file>   
+      <suite-file path="getIptAlreadyCheckNumTest.xml"></suite-file>   
+      <suite-file path="getOptAlreadyCheckNumTest.xml"></suite-file>   
+      <suite-file path="getCheckResultQueryTest.xml"></suite-file>   
+      <suite-file path="getAnalysisOptRecipeInfoTest.xml"></suite-file>   
+      <suite-file path="getOptNextIdTest.xml"></suite-file>   
+      <suite-file path="getOptPreviousIdTest.xml"></suite-file>   
+      <suite-file path="getCheckProjectListTest.xml"></suite-file-->   
+      <suite-file path="getIptCheckResultTest.xml"></suite-file>   
+      <suite-file path="delProject.xml"></suite-file>   
+      <suite-file path="getOptOperationTest.xml"></suite-file>   
   </suite-files> 
 </suite> <!-- Suite -->

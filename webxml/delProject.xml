@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="delProjectTest" >
+  <listeners>
+     <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+  <test name="w_delProjectTest" verbose="2">
+	 <parameter name="projectId" value="1" />
+	 <parameter name="source" value="1" />
+    <classes> 
+    <class name="com.ipharmacare.sf.webtest.LoginTest">
+        <methods>
+              <include name="login_Succ"></include>
+         </methods>
+    </class>  
+    <class name="com.ipharmacare.sf.webtest.delProjectTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
