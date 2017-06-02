@@ -130,5 +130,9 @@
       <suite-file path="getIptCheckResultTest.xml"></suite-file>   
       <suite-file path="delProject.xml"></suite-file>   
       <suite-file path="getOptOperationTest.xml"></suite-file>   
+      <suite-file path="postSaveOperationTest.xml"></suite-file>   
+      <suite-file path="postSaveProjectTest.xml"></suite-file>   
+      <suite-file path="getReportListTest.xml"></suite-file>   
+      <suite-file path="getAnalysisExportTest.xml"></suite-file>   
   </suite-files> 
 </suite> <!-- Suite -->
