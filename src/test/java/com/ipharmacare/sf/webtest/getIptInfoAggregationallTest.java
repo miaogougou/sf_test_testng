@@ -26,14 +26,14 @@ public class getIptInfoAggregationallTest {
     getIptInfoAggregationall req=new getIptInfoAggregationall();
     
     
-    @Parameters({"id"})
+    @Parameters({"id","startDate","period"})
 	@Test(groups = { "BaseCase1"})
-    public void getIptInfoAggregationall_Succ(String id) throws Exception{
-        resultCheck(id,StatusInfo.REQUEST_SUCCESS); 
+    public void getIptInfoAggregationall_Succ(String id,String startDate,String period) throws Exception{
+        resultCheck(id,startDate,period,StatusInfo.REQUEST_SUCCESS); 
     }
      
-    public void resultCheck(String id, StatusInfo statusInfo ) throws Exception{
-        Result=req.getHttpRespone(id);  
+    public void resultCheck(String id, String startDate, String period,StatusInfo statusInfo ) throws Exception{
+        Result=req.getHttpRespone(id,startDate,period);  
         Reporter.log("请求地址: "+req.geturl());
         Reporter.log("返回结果: "+Result);
         System.out.println("请求地址: "+req.geturl());

@@ -26,14 +26,14 @@ public class getIptDrugAuditRelatedTest {
     getIptDrugAuditRelated req=new getIptDrugAuditRelated();
     
     
-    @Parameters({"id"})
+    @Parameters({"id","zoneId","productId"})
 	@Test(groups = { "BaseCase1"})
-    public void getIptDrugAuditRelated_Succ(String id) throws Exception{
-        resultCheck(id,StatusInfo.REQUEST_SUCCESS); 
+    public void getIptDrugAuditRelated_Succ(String id,String zoneId,String productId) throws Exception{
+        resultCheck(id,zoneId,productId,StatusInfo.REQUEST_SUCCESS); 
     }
      
-    public void resultCheck(String id, StatusInfo statusInfo ) throws Exception{
-        Result=req.getHttpRespone(id);  
+    public void resultCheck(String id,String zoneId,String productId, StatusInfo statusInfo ) throws Exception{
+        Result=req.getHttpRespone(id,zoneId,productId);  
         Reporter.log("请求地址: "+req.geturl());
         Reporter.log("返回结果: "+Result);
         System.out.println("请求地址: "+req.geturl());

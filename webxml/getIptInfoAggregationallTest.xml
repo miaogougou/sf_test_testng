@@ -7,6 +7,8 @@
   </listeners>
   <test name="w_IptInfoAggregationallTest" verbose="2">
 	 <parameter name="id" value="1" />
+	 <parameter name="startDate" value="1" />
+	 <parameter name="period" value="1" />
     <classes> 
     <class name="com.ipharmacare.sf.webtest.LoginTest">
         <methods>

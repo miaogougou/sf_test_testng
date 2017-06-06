@@ -80,7 +80,7 @@ public class getOptRecipeOperationList {
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
                 .build();
-        url=GetRequestUrl.getRequestUrl("/api/v1/opt/OperationList/"+optRecipeId); 
+        url=GetRequestUrl.getRequestUrl("/api/v1/opt/optOperationList/"+optRecipeId); 
         
         try {
         	HttpUriRequest req = RequestBuilder.get()

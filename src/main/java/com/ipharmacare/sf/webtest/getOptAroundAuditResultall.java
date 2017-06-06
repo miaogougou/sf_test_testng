@@ -75,16 +75,17 @@ public class getOptAroundAuditResultall {
      * @return String    返回类型 
      * @throws
      */
-    public String getHttpRespone(String aroundAuditResultId) throws Exception {
+    public String getHttpRespone(String id) throws Exception {
     	BasicCookieStore cookieStore = RequestCookiestore.getRequestCookies();
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
                 .build();
-        url=GetRequestUrl.getRequestUrl("/api/v1/opt/all/"+aroundAuditResultId); 
+        url=GetRequestUrl.getRequestUrl("/api/v1/opt/all/aroundAuditResultId"); 
         
         try {
         	HttpUriRequest req = RequestBuilder.get()
                     .setUri(new URI(url))
+                    .addParameter("id", id)
                     .build();
         	CloseableHttpResponse response = httpclient.execute(req);
             try {

@@ -26,14 +26,14 @@ public class getOptAroundAuditResultallTest {
     getOptAroundAuditResultall req=new getOptAroundAuditResultall();
     
     
-    @Parameters({"aroundAuditResultId"})
+    @Parameters({"id"})
 	@Test(groups = { "BaseCase1"})
-    public void getOptAroundAuditResultall_Succ(String aroundAuditResultId) throws Exception{
-        resultCheck(aroundAuditResultId,StatusInfo.REQUEST_SUCCESS); 
+    public void getOptAroundAuditResultall_Succ(String id) throws Exception{
+        resultCheck(id,StatusInfo.REQUEST_SUCCESS); 
     }
      
-    public void resultCheck(String aroundAuditResultId, StatusInfo statusInfo ) throws Exception{
-        Result=req.getHttpRespone(aroundAuditResultId);  
+    public void resultCheck(String id, StatusInfo statusInfo ) throws Exception{
+        Result=req.getHttpRespone(id);  
         Reporter.log("请求地址: "+req.geturl());
         Reporter.log("返回结果: "+Result);
         System.out.println("请求地址: "+req.geturl());

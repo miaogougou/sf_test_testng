@@ -7,6 +7,8 @@
   </listeners>
   <test name="w_IptDrugAuditRelatedTest" verbose="2">
 	 <parameter name="id" value="1" />
+	 <parameter name="zoneId" value="1" />
+	 <parameter name="productId" value="1" />
     <classes> 
     <class name="com.ipharmacare.sf.webtest.LoginTest">
         <methods>

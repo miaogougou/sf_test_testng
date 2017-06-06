@@ -80,7 +80,7 @@ public class getOptRecipeAllergyListall {
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
                 .build();
-        url=GetRequestUrl.getRequestUrl("/api/v1/opt/all/optRecipeAllergyList/"+optRecipeId); 
+        url=GetRequestUrl.getRequestUrl("/api/v1/opt/all/optAllergyList/"+optRecipeId); 
         
         try {
         	HttpUriRequest req = RequestBuilder.get()

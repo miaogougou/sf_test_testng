@@ -139,7 +139,7 @@
       <suite-file path="getIptCreateProjectReportTest.xml"></suite-file>   
       <suite-file path="getExcuteReportTest.xml"></suite-file>   
       <suite-file path="getIptCheckResultTest.xml"></suite-file>   
-      <suite-file path="getAnalysisExportTest.xml"></suite-fil>   
+      <suite-file path="getAnalysisExportTest.xml"></suite-file>   
       <suite-file path="getOptAlreadyCheckNumTest.xml"></suite-file>   
       <suite-file path="getOptNextIdTest.xml"></suite-file>   
       <suite-file path="getOptPreviousIdTest.xml"></suite-file>   

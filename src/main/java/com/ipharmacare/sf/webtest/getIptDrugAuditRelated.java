@@ -75,7 +75,7 @@ public class getIptDrugAuditRelated {
      * @return String    返回类型 
      * @throws
      */
-    public String getHttpRespone(String id) throws Exception {
+    public String getHttpRespone(String id,String zoneId,String productId) throws Exception {
     	BasicCookieStore cookieStore = RequestCookiestore.getRequestCookies();
         CloseableHttpClient httpclient = HttpClients.custom()
                 .setDefaultCookieStore(cookieStore)
@@ -86,6 +86,8 @@ public class getIptDrugAuditRelated {
         	HttpUriRequest req = RequestBuilder.get()
                     .setUri(new URI(url))
                     .addParameter("id", id)
+                    .addParameter("zoneId", zoneId)
+                    .addParameter("productId", productId)
                     .build();
         	CloseableHttpResponse response = httpclient.execute(req);
             try {

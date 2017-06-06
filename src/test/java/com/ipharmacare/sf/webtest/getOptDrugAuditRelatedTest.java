@@ -26,7 +26,7 @@ public class getOptDrugAuditRelatedTest {
     getOptDrugAuditRelated req=new getOptDrugAuditRelated();
     
     
-    @Parameters({"optRecipeId,zoneId,productId"})
+    @Parameters({"optRecipeId","zoneId","productId"})
 	@Test(groups = { "BaseCase1"})
     public void getOptDrugAuditRelated_Succ(String optRecipeId,String zoneId,String productId) throws Exception{
         resultCheck(optRecipeId,zoneId,productId,StatusInfo.REQUEST_SUCCESS); 
