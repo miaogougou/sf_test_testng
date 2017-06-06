@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite_webtest" >
   <suite-files>
-      <suite-file path="LoginTest.xml"></suite-file>
+	  <suite-file path="LoginTest.xml"></suite-file>
       <suite-file path="LogoutTest.xml"></suite-file>
       <suite-file path="delAuditPlanTest.xml"></suite-file>
       <suite-file path="getAuditPlanListTest.xml"></suite-file>
@@ -119,20 +119,36 @@
       <suite-file path="putReleaseAuditingTest.xml"></suite-file>   
       <suite-file path="putAuditingTest.xml"></suite-file>   
       <suite-file path="putAuditPlanTest.xml"></suite-file>   
+      <suite-file path="postAuditBatchAgreeTest.xml"></suite-file>   
+      <suite-file path="postAuditBatchRefuseTest.xml"></suite-file>   
       <suite-file path="getAuditConfigTest.xml"></suite-file>   
-      <suite-file path="getIptAlreadyCheckNumTest.xml"></suite-file>   
-      <suite-file path="getOptAlreadyCheckNumTest.xml"></suite-file>   
       <suite-file path="getCheckResultQueryTest.xml"></suite-file>   
       <suite-file path="getAnalysisOptRecipeInfoTest.xml"></suite-file>   
-      <suite-file path="getOptNextIdTest.xml"></suite-file>   
-      <suite-file path="getOptPreviousIdTest.xml"></suite-file>   
       <suite-file path="getCheckProjectListTest.xml"></suite-file>   
-      <suite-file path="getIptCheckResultTest.xml"></suite-file>   
       <suite-file path="delProject.xml"></suite-file>   
       <suite-file path="getOptOperationTest.xml"></suite-file>   
       <suite-file path="postSaveOperationTest.xml"></suite-file>   
       <suite-file path="postSaveProjectTest.xml"></suite-file>   
       <suite-file path="getReportListTest.xml"></suite-file>   
-      <suite-file path="getAnalysisExportTest.xml"></suite-file>   
+      <suite-file path="postGetCheckListTest.xml"></suite-file>   
+      <suite-file path="getIptCheckDataTest.xml"></suite-file>   
+      <suite-file path="postExtractIptCheckDataTest.xml"></suite-file>   
+      <suite-file path="getOptCheckResultListTest.xml"></suite-file>   
+      <suite-file path="getCheckIptOrderDataTest.xml"></suite-file>   
+      <suite-file path="postSaveCheckResultTest.xml"></suite-file>   
+      <suite-file path="getIptCreateProjectReportTest.xml"></suite-file>   
+      <suite-file path="getExcuteReportTest.xml"></suite-file>   
+      <suite-file path="getIptCheckResultTest.xml"></suite-file>   
+      <suite-file path="getAnalysisExportTest.xml"></suite-fil>   
+      <suite-file path="getOptAlreadyCheckNumTest.xml"></suite-file>   
+      <suite-file path="getOptNextIdTest.xml"></suite-file>   
+      <suite-file path="getOptPreviousIdTest.xml"></suite-file>   
+	  <suite-file path="getOptReviewResultListTest.xml"></suite-file>
+	  <suite-file path="getIptReviewResultListTest.xml"></suite-file>
+	  <suite-file path="postAddReplyTemplateTest.xml"></suite-file>
+	  <suite-file path="postExportDrugMessageListTest.xml"></suite-file>
+	  <suite-file path="getNextAuditTaskIdTest.xml"></suite-file>
+	  <suite-file path="getAuditResultTest.xml"></suite-file>
+	  <suite-file path="getIptAroundAuditResultIdallTest.xml"></suite-file>
   </suite-files> 
 </suite> <!-- Suite -->

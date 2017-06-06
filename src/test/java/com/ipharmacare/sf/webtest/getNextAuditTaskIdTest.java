@@ -20,30 +20,30 @@ import com.ipharmacare.sf.webtest.common.ResponseEntity.StatusInfo;
 
 
 
-public class getIptCheckResultTest {
+public class getNextAuditTaskIdTest {
     
-    public String Code=null,Data=null,OptRecipeInfo=null,Result=null,optRecipeId=null;
-    getIptCheckResult req=new getIptCheckResult();
+    public String Code=null,Data=null,Result=null,Msg=null;
+    getNextAuditTaskId req=new getNextAuditTaskId();
     
     
-    @Parameters({"projectId","engineId","groupNo"})
+    @Parameters({"id","type"})
 	@Test(groups = { "BaseCase1"})
-    public void getIptCheckResult_Succ(String projectId,String engineId,String groupNo) throws Exception{
-        resultCheck(projectId,engineId,groupNo,StatusInfo.REQUEST_SUCCESS); 
+    public void getNextAuditTaskId_Succ(String id,String type) throws Exception{
+        resultCheck(id,type,StatusInfo.REQUEST_SUCCESS); 
     }
      
-    public void resultCheck(String projectId,String engineId,String groupNo, StatusInfo statusInfo ) throws Exception{
-        Result=req.getHttpRespone(projectId,engineId,groupNo);  
+    public void resultCheck(String id, String type,StatusInfo statusInfo ) throws Exception{
+        Result=req.getHttpRespone(id,type);  
         Reporter.log("请求地址: "+req.geturl());
         Reporter.log("返回结果: "+Result);
         System.out.println("请求地址: "+req.geturl());
         System.out.println("返回结果: "+Result);
         Code=Common.getJsonValue(Result, "code");
         Data=Common.getJsonValue(Result, "data");
-        OptRecipeInfo=Common.getJsonValue(Result, "message");
+        Msg=Common.getJsonValue(Result, "message");
         if(null != statusInfo ) {
         	Assert.assertEquals(Code,statusInfo.getCode()); 
-            Assert.assertEquals(OptRecipeInfo,statusInfo.getMessage());
+            Assert.assertEquals(Msg,statusInfo.getMessage());
         }
     }
 }

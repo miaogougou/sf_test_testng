@@ -29,6 +29,22 @@ public class postAuditPlanTest {
     
     @BeforeSuite
     public void PostAuditPlanWithoutlogin_Fail() throws IOException{
+	/*
+	  {
+	     "name":"测试测试哈",
+		 "category":2,
+		 "recipeSource":0,
+		 "infoList":[
+		     { 
+			   "message":"相互作用",
+			   "symbol":"<",
+			   "analysisType":"适宜性分析",
+			   "severity":7,
+			   "cautionStatus":"全部"
+			   }
+		  ]
+	   }
+	  */
     	JsonArray jarry = new JsonArray();  
     	JsonObject jobj = new JsonObject();  
     	JsonObject infoList = new JsonObject(); 
@@ -44,7 +60,7 @@ public class postAuditPlanTest {
         jobj.add("infoList",jarry);
     	System.out.println(jobj.toString());
     	System.out.println(jobj.get("name"));
-        resultCheck(jobj.toString(),"405");
+        resultCheck(jobj.toString(),"400");
     }
     /**
      * 

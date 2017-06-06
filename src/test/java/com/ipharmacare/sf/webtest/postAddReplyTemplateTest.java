@@ -20,20 +20,20 @@ import com.ipharmacare.sf.webtest.common.ResponseEntity.StatusInfo;
 
 
 
-public class getIptCheckResultTest {
+public class postAddReplyTemplateTest {
     
-    public String Code=null,Data=null,OptRecipeInfo=null,Result=null,optRecipeId=null;
-    getIptCheckResult req=new getIptCheckResult();
+    public String Code=null,Data=null,OptRecipeInfo=null,Result=null,replyTemplate=null;
+    postAddReplyTemplate req=new postAddReplyTemplate();
     
     
-    @Parameters({"projectId","engineId","groupNo"})
+    @Parameters({"replyTemplate"})
 	@Test(groups = { "BaseCase1"})
-    public void getIptCheckResult_Succ(String projectId,String engineId,String groupNo) throws Exception{
-        resultCheck(projectId,engineId,groupNo,StatusInfo.REQUEST_SUCCESS); 
+    public void postAddReplyTemplate_Succ(String replyTemplate) throws Exception{
+        resultCheck(replyTemplate,StatusInfo.REQUEST_SUCCESS); 
     }
      
-    public void resultCheck(String projectId,String engineId,String groupNo, StatusInfo statusInfo ) throws Exception{
-        Result=req.getHttpRespone(projectId,engineId,groupNo);  
+    public void resultCheck(String replyTemplate, StatusInfo statusInfo ) throws Exception{
+        Result=req.getHttpRespone(replyTemplate);  
         Reporter.log("请求地址: "+req.geturl());
         Reporter.log("返回结果: "+Result);
         System.out.println("请求地址: "+req.geturl());
