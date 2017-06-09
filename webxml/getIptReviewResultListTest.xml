@@ -6,11 +6,11 @@
      <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
   </listeners>
   <test name="w_IptReviewResultListTest" verbose="2">
-	 <parameter name="startTime" value="" />
-	 <parameter name="endTime" value="" />
+	 <parameter name="startTime" value="1496296394133" />
+	 <parameter name="endTime" value="1496901194133" />
 	 <parameter name="page" value="1" />
 	 <parameter name="pageSize" value="20" />
-	 <parameter name="checkPeopleName" value="" />
+	 <parameter name="checkPeopleName" value="daijj" />
 	 <parameter name="checkResult" value="1" />
 	 <parameter name="source" value="3" />
     <classes> 

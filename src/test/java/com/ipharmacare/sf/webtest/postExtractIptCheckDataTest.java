@@ -37,22 +37,59 @@ public class postExtractIptCheckDataTest {
     public void PostExtractIptCheckData_Succ() throws Exception{
     	JSONObject jobj = new JSONObject();  
     	JSONArray jarry = new JSONArray();  
-        jobj.put("projectId", 0);  
-        jobj.put("startTime", 0); 
-        jobj.put("endTime", 0);
-        jobj.put("source", 0);
-		jobj.put("type", 0);
-		jobj.put("randomNum", 0);
-		jobj.put("resultPercentage", 0);
-		jobj.put("userRealName", "string");
-		jobj.put("userName", "string");
-        jarry.add("1234"); 
-        jarry.add("4321"); 
-        jobj.element("auditIdList",jarry);
-    	System.out.println(jobj.get("auditIdList"));
+        //jobj.put("projectId", 0);  
+        jobj.put("startTime", "1496282704367"); 
+        jobj.put("endTime", "1496887504367");
+        jobj.put("source", 3);
+		jobj.put("type", 1);
+		//jobj.put("randomNum", 0);
+		//jobj.put("resultPercentage", 0);
+		//jobj.put("userRealName", "string");
+		//jobj.put("userName", "string");
+         // jarry.add("679"); 
+         // jarry.add("702"); 
+          //jobj.element("auditIdList",jarry);
+    	//System.out.println(jobj.get("auditIdList"));
         resultCheck(jobj.toString(),StatusInfo.REQUEST_SUCCESS); 
     }
-    
+	/*
+    @Test(groups = { "BaseCase1"})
+    public void PostExtractIptCheckDataPercent_Succ() throws Exception{
+    	JSONObject jobj = new JSONObject();  
+    	JSONArray jarry = new JSONArray();  
+        //jobj.put("projectId", 0);  
+        jobj.put("startTime", "1496282704367"); 
+        jobj.put("endTime", "1496887504367");
+        jobj.put("source", 3);
+		jobj.put("type", 2);
+		//jobj.put("randomNum", 0);
+		jobj.put("resultPercentage", "0.5");
+		//jobj.put("userRealName", "string");
+		//jobj.put("userName", "string");
+        //jarry.add("702"); 
+        //jobj.element("auditIdList",jarry);
+    	//System.out.println(jobj.get("auditIdList"));
+        resultCheck(jobj.toString(),StatusInfo.REQUEST_SUCCESS); 
+    }
+    @Test(groups = { "BaseCase1"})
+    public void PostExtractIptCheckDataRandom_Succ() throws Exception{
+    	JSONObject jobj = new JSONObject();  
+    	JSONArray jarry = new JSONArray();  
+        //jobj.put("projectId", 0);  
+        jobj.put("startTime", "1496282704367"); 
+        jobj.put("endTime", "1496887504367");
+        jobj.put("source", 3);
+		jobj.put("type", 3);
+		jobj.put("randomNum", 3);
+		//jobj.put("resultPercentage", "0.5");
+		//jobj.put("userRealName", "string");
+		//jobj.put("userName", "string");
+        //jarry.add("702"); 
+        //jobj.element("auditIdList",jarry);
+    	//System.out.println(jobj.get("auditIdList"));
+        resultCheck(jobj.toString(),StatusInfo.REQUEST_SUCCESS); 
+    }
+    */
     public void resultCheck(String body,StatusInfo statusInfo ) throws Exception{
         Result=req.getHttpRespone(body);  
         Reporter.log("请求地址: "+req.geturl());

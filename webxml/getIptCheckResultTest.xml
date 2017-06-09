@@ -6,9 +6,9 @@
      <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
   </listeners>
   <test name="w_IptCheckresultTest" verbose="2">
-	  <parameter name="projectId" value="1"/>
-	  <parameter name="engineId" value="1"/>
-	  <parameter name="groupNo" value="1"/>
+	  <parameter name="projectId" value="15002"/>
+	  <parameter name="engineId" value="155001"/>
+	  <parameter name="groupNo" value="20170605b1_1"/>
     <classes> 
     <class name="com.ipharmacare.sf.webtest.LoginTest">
         <methods>

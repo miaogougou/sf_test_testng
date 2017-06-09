@@ -6,7 +6,7 @@
      <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
   </listeners>
   <test name="w_IptCreateProjectReportTest" verbose="2">
-	 <parameter name="projectId" value="1" />
+	 <parameter name="projectId" value="15002" />
     <classes> 
     <class name="com.ipharmacare.sf.webtest.LoginTest">
         <methods>

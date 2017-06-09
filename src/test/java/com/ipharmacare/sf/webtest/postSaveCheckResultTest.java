@@ -36,22 +36,22 @@ public class postSaveCheckResultTest {
     @Test(groups = { "BaseCase1"})
     public void PostSaveCheckResult_Succ() throws Exception{
     	JSONObject jobj = new JSONObject();  
-		jobj.put("id", 0);
-		jobj.put("projectId", 0);
-		jobj.put("engineId", 0);
-		jobj.put("groupNo", "string");
-		jobj.put("zoneId", 0);
-		jobj.put("areaId", "string");
-		jobj.put("areaName", "string");
-		jobj.put("patientId", "string");
-		jobj.put("patientName", "string");
-		jobj.put("pharmacistId", "string");
-		jobj.put("pharmacistName", "string");
-		jobj.put("checkResult", 0);
-		jobj.put("checkOpinion", "string");
-		jobj.put("checkPeopleId", "string");
-		jobj.put("checkPeopleName", "string");
-    	System.out.println(jobj.get("id"));
+		//jobj.put("id", 0);
+		jobj.put("projectId", 15002);
+		jobj.put("engineId", 155001);
+		jobj.put("groupNo", "20170605b1_1");
+		//jobj.put("zoneId", 0);
+		//jobj.put("areaId", "string");
+		//jobj.put("areaName", "string");
+		//jobj.put("patientId", "string");
+		//jobj.put("patientName", "string");
+		//jobj.put("pharmacistId", "string");
+		//jobj.put("pharmacistName", "string");
+		jobj.put("checkResult", 1);
+		//jobj.put("checkOpinion", "string");
+		//jobj.put("checkPeopleId", "string");
+		//jobj.put("checkPeopleName", "string");
+    	//System.out.println(jobj.get("id"));
         resultCheck(jobj.toString(),StatusInfo.REQUEST_SUCCESS); 
     }
     

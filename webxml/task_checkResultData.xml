@@ -8,6 +8,5 @@
 	  <suite-file path="getIptCheckResultTest.xml"></suite-file>
 	  <suite-file path="getIptCheckDataTest.xml"></suite-file>
 	  <suite-file path="getCheckIptOrderDataTest.xml"></suite-file>
-	  <suite-file path="getIptReviewResultListTest.xml"></suite-file>
   </suite-files> 
 </suite> <!-- Suite -->
