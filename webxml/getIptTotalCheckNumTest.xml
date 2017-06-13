@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="IptReviewResultListTest" >
+<suite name="IptTotalCheckNumTest" >
   <listeners>
      <listener class-name="org.uncommons.reportng.HTMLReporter" />
      <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
   </listeners>
-  <test name="w_IptReviewResultListTest" verbose="2">
-	 <parameter name="startTime" value="1496641760336" />
-	 <parameter name="endTime" value="1497246560336" />
-	 <parameter name="page" value="1" />
-	 <parameter name="pageSize" value="20" />
-	 <parameter name="checkPeopleName" value="681" />
-	 <parameter name="checkResult" value="1" />
-	 <parameter name="source" value="3" />
+  <test name="w_IptTotalCheckNumTest" verbose="2">
+	 <parameter name="projectId" value="15002" />
     <classes> 
     <class name="com.ipharmacare.sf.webtest.LoginTest">
         <methods>
               <include name="login_Succ"></include>
          </methods>
     </class>  
-    <class name="com.ipharmacare.sf.webtest.getIptReviewResultListTest"/>
+    <class name="com.ipharmacare.sf.webtest.getIptTotalCheckNumTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

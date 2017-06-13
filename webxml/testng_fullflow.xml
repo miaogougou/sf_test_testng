@@ -150,5 +150,9 @@
 	  <suite-file path="getNextAuditTaskIdTest.xml"></suite-file>
 	  <suite-file path="getAuditResultTest.xml"></suite-file>
 	  <suite-file path="getIptAroundAuditResultIdallTest.xml"></suite-file>
+	  <suite-file path="getIptTotalCheckNumTest.xml"></suite-file>
+	  <suite-file path="getOptTotalCheckNumTest.xml"></suite-file>
+	  <suite-file path="getIptPreviousEngineIdTest.xml"></suite-file>
+	  <suite-file path="getIptNextEngineIdTest.xml"></suite-file>
   </suite-files> 
 </suite> <!-- Suite -->
