@@ -92,7 +92,7 @@ public class getOptReviewResultList {
                     .addParameter("endTime", endTime)
                     .addParameter("page", page)
                     .addParameter("pageSize", pageSize)
-                    .addParameter("checkPeopleName", checkPeopleName)
+                    .addParameter("checkPeopleId", checkPeopleName)
                     .addParameter("checkResult", checkResult)
                     .addParameter("source", source)
                     .build();

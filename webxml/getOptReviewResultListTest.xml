@@ -6,13 +6,13 @@
      <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
   </listeners>
   <test name="w_OptReviewResultListTest" verbose="2">
-	 <parameter name="startTime" value="" />
-	 <parameter name="endTime" value="" />
+	 <parameter name="startTime" value="1496764800000" />
+	 <parameter name="endTime" value="1497455999999" />
 	 <parameter name="page" value="1" />
 	 <parameter name="pageSize" value="20" />
-	 <parameter name="checkPeopleName" value="" />
+	 <parameter name="checkPeopleName" value="680" />
 	 <parameter name="checkResult" value="1" />
-	 <parameter name="source" value="1" />
+	 <parameter name="source" value="0" />
     <classes> 
     <class name="com.ipharmacare.sf.webtest.LoginTest">
         <methods>

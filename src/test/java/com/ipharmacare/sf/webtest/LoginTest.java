@@ -43,7 +43,7 @@ public class LoginTest {
     public void login_Succ() throws Exception{
        // username="daijj";
        // password="ipharmacare";
-        username="审方药师1";
+        username="审方药师2";
         password="123456";
         resultCheck(username, password,null,StatusInfo.REQUEST_SUCCESS);
     }
