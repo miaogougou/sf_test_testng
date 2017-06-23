@@ -20,7 +20,7 @@
     <classes>  
     <class name="com.ipharmacare.sf.webtest.postAuditPlanTest">
     <methods>
-        <include name="PostAuditPlanWithoutlogin_Fail" />
+        <!--include name="PostAuditPlanWithoutlogin_Fail" /-->
         <include name="PostAuditPlanCustemOne_Succ" />
         </methods>
      </class>

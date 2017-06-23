@@ -22,8 +22,9 @@ public class getCheckAuditPlanNameTest {
     }
     @Test(groups = { "BaseCase1"})
     public void GetcheckAuditPlanName_Succ() throws Exception{
-    	planname = "junjun-住院-测试5";
-        resultCheck(planname,StatusInfo.REQUEST_SUCCESS,"true");       
+    	planname = "junjun-住院-测试7";
+        //resultCheck(planname,StatusInfo.REQUEST_SUCCESS,"true");       
+        resultCheck(planname,StatusInfo.REQUEST_SUCCESS,"false");       
     }
     
     public void resultCheck(String planname, StatusInfo statusInfo,String data ) throws Exception{

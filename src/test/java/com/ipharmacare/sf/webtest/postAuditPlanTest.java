@@ -26,7 +26,7 @@ public class postAuditPlanTest {
      * @return void    返回类型 
      * @throws
      */
-    
+    /*
     @BeforeSuite
     public void PostAuditPlanWithoutlogin_Fail() throws IOException{
 	/*
@@ -44,7 +44,7 @@ public class postAuditPlanTest {
 			   }
 		  ]
 	   }
-	  */
+	  
     	JsonArray jarry = new JsonArray();  
     	JsonObject jobj = new JsonObject();  
     	JsonObject infoList = new JsonObject(); 
@@ -62,6 +62,7 @@ public class postAuditPlanTest {
     	System.out.println(jobj.get("name"));
         resultCheck(jobj.toString(),"400");
     }
+   */
     /**
      * 
      * @Title: PostAuditPlanCustemOne_Succ 
@@ -104,7 +105,7 @@ public class postAuditPlanTest {
     	JsonArray jarry = new JsonArray();  
     	JsonObject jobj = new JsonObject();  
     	JsonObject infoList = new JsonObject(); 
-        jobj.addProperty("name", "测试测试哈");  
+        jobj.addProperty("name", "测试测试2");  
         jobj.addProperty("category", 2); 
         jobj.addProperty("recipeSource", 0);
         infoList.addProperty("message", "相互作用");

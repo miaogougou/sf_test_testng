@@ -26,7 +26,8 @@ public class getReplyTemplateListTest {
     
     @Test(groups = { "BaseCase1"})
     public void getReplyTemplateList_Succ() throws Exception{
-        resultCheck(StatusInfo.REQUEST_NORESOURCE); 
+        //resultCheck(StatusInfo.REQUEST_NORESOURCE); 
+        resultCheck(StatusInfo.REQUEST_SUCCESS); 
     }
      
     public void resultCheck( StatusInfo statusInfo ) throws Exception{

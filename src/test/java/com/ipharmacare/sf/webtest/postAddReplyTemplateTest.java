@@ -29,7 +29,7 @@ public class postAddReplyTemplateTest {
     @Parameters({"replyTemplate"})
 	@Test(groups = { "BaseCase1"})
     public void postAddReplyTemplate_Succ(String replyTemplate) throws Exception{
-        resultCheck(replyTemplate,StatusInfo.REQUEST_SUCCESS); 
+        resultCheck(replyTemplate,StatusInfo.REQUEST_FORBIDDEN); 
     }
      
     public void resultCheck(String replyTemplate, StatusInfo statusInfo ) throws Exception{

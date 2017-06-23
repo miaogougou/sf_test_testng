@@ -54,17 +54,16 @@ public class postSaveProjectTest {
 		*/
     	JSONObject jobj = new JSONObject();  
     	JSONArray jarry = new JSONArray();  
-        jobj.put("projectId", 0);  
-        jobj.put("startTime", 0); 
-        jobj.put("endTime", 0);
+        //jobj.put("projectId", 0);  
+        jobj.put("startTime", "1497542400000"); 
+        jobj.put("endTime", "1498233599999");
         jobj.put("source", 0);
-		jobj.put("type", 0);
-		jobj.put("randomNum", 0);
-		jobj.put("resultPercentage", 0);
-		jobj.put("userRealName", "string");
-		jobj.put("userName", "string");
-        jarry.add("1234"); 
-        jarry.add("4321"); 
+		jobj.put("type", 3);
+		jobj.put("randomNum", 3);
+		//jobj.put("resultPercentage", 0);
+		//jobj.put("userRealName", "string");
+		//jobj.put("userName", "string");
+        jarry.add("680"); 
         jobj.element("auditIdList",jarry);
     	System.out.println(jobj.get("auditIdList"));
         resultCheck(jobj.toString(),projectName,StatusInfo.REQUEST_SUCCESS); 

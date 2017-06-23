@@ -4,7 +4,7 @@
   <suite-files>
 	  <suite-file path="postExtractIptCheckDataTest.xml"></suite-file>
 	  <suite-file path="getIptAlreadyCheckNumTest.xml"></suite-file>
-	  <suite-file path="postSaveCheckResultTest.xml"></suite-file>
+	  <!--suite-file path="postSaveCheckResultTest.xml"></suite-file-->
 	  <suite-file path="getIptCheckResultTest.xml"></suite-file>
 	  <suite-file path="getIptCheckDataTest.xml"></suite-file>
 	  <suite-file path="getCheckIptOrderDataTest.xml"></suite-file>

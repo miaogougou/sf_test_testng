@@ -41,10 +41,10 @@ public class LoginTest {
      */
     @Test(groups = { "flowcase"},dataProvider = "mn")
     public void login_Succ() throws Exception{
-       // username="daijj";
-       // password="ipharmacare";
-        username="审方药师2";
-        password="123456";
+        username="daijj";
+        password="ipharmacare";
+        //username="审方药师2";
+        //password="123456";
         resultCheck(username, password,null,StatusInfo.REQUEST_SUCCESS);
     }
     /**

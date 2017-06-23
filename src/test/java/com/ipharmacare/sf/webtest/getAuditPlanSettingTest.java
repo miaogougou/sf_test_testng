@@ -29,7 +29,8 @@ public class getAuditPlanSettingTest {
     @Parameters({"ids"})
 	@Test(groups = { "BaseCase1"})
     public void getAuditPlanSetting_Succ(String ids) throws Exception{
-        resultCheck(ids,StatusInfo.REQUEST_SUCCESS,"true"); 
+        //resultCheck(ids,StatusInfo.REQUEST_SUCCESS,"true"); 
+        resultCheck(ids,StatusInfo.REQUEST_SUCCESS,"false"); 
     }
     @Parameters({"ids1"})
 	@Test(groups = { "BaseCase1"})

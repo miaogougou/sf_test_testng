@@ -33,7 +33,7 @@ public class putAuditPlanTest {
     	JsonObject jobj = new JsonObject();  
     	JsonObject infoList = new JsonObject(); 
         jobj.addProperty("id", 0); 
-        jobj.addProperty("name", "test_add_by_daijj"); 
+        jobj.addProperty("name", "junjun-住院-测试7"); 
         jobj.addProperty("category", 1); 
         jobj.addProperty("recipeSource", 1);
         infoList.addProperty("message", "相互作用");
@@ -45,7 +45,8 @@ public class putAuditPlanTest {
         jobj.add("infoList",jarry);
     	System.out.println(jobj.toString());
     	System.out.println(jobj.get("name"));
-        resultCheck(id,jobj.toString(),StatusInfo.REQUEST_SUCCESS,"true"); 
+        //resultCheck(id,jobj.toString(),StatusInfo.REQUEST_SUCCESS,"true"); 
+        resultCheck(id,jobj.toString(),StatusInfo.REQUEST_NORESOURCE,null); 
     }
      
     public void resultCheck(String id,String body, StatusInfo statusInfo,String data ) throws Exception{
@@ -59,7 +60,7 @@ public class putAuditPlanTest {
         Msg=Common.getJsonValue(Result, "message");
         if(null != statusInfo ) {
         	Assert.assertEquals(Code,statusInfo.getCode()); 
-            Assert.assertEquals(Msg,statusInfo.getMessage());
+            //Assert.assertEquals(Msg,statusInfo.getMessage());
         }
             Assert.assertEquals(Data,data);
     }
