@@ -36,9 +36,13 @@ public class delAuditPlanTest {
     		Object val = entry.getValue();
     		id = (String) key;
     	}
-       
-    	resultCheck(id,StatusInfo.REQUEST_SUCCESS);             
-       System.out.println(RequestPlanMap.getPlanMap().toString());
+        if(id == null) {
+           System.out.println("没有可以删除的审方列表！");
+        } else {
+            resultCheck(id,StatusInfo.REQUEST_SUCCESS); 
+            System.out.println(RequestPlanMap.getPlanMap().toString());
+        }            
+      
     }
      
     public void resultCheck( String id ,StatusInfo statusInfo ) throws Exception{
