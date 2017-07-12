@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - w_LoginTest</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>w_LoginTest</h1>
+<p>
+  Test duration: 2.440s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.ipharmacare.sf.webtest.LoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  login_IllegalPwd
+      </td>
+  <td class="duration">
+    0.945s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户密码不匹配","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235F806BA0662C2340C6F982ED876ABC5F1A"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_IllegalUser
+      </td>
+  <td class="duration">
+    0.048s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户数据传入有误","token":"F9D1350DE9374243222F501A67000B68B4AC3A53521B4219D2DD5D7B459A032DEC4F663992EC0EAB0D182D2ACF9124E2"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_IllegalUserName
+      </td>
+  <td class="duration">
+    0.094s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户数据传入有误","token":"F9D1350DE9374243222F501A67000B68B4AC3A53521B4219D2DD5D7B459A032D064DCA8C2E56898E852A7D284EAAFF68"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_MissPwd
+      </td>
+  <td class="duration">
+    0.068s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户密码不匹配","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235F33DBD26B218C34A486AA4DC16DE25F1B"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_MissUser
+      </td>
+  <td class="duration">
+    0.081s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"入参不合法","token":"6FC1D03C091FBBDD30C00B1B5D8C1DD5523531FC77D479332CB97DB5A73DFAEC"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_PwSpaced
+      </td>
+  <td class="duration">
+    0.083s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户密码不匹配","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235FFA8B9FDA5F7368CBAC2BBEA6A8B5439A"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_PwdSpace
+      </td>
+  <td class="duration">
+    0.094s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户密码不匹配","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235F2B02BFF4503FCEEE7B259C19EC99F459"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_SpPwdace
+      </td>
+  <td class="duration">
+    0.057s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户密码不匹配","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235FADCB41F43C500689789D4E7CB4F19D16"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_SpUserace
+      </td>
+  <td class="duration">
+    0.047s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户数据传入有误","token":"FE1032FA93E1C3DFF7BD0EB85E1CA88DB2D9E13A01FC26E385C09B09DA0AACE9EC64FA675D11EB9A319421E34B6DCDC4"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_SpacePSpace
+      </td>
+  <td class="duration">
+    0.049s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户密码不匹配","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235F0D48368270F48DCED21EBBE01FE50A0F"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_SpacePwd
+      </td>
+  <td class="duration">
+    0.055s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户密码不匹配","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235F858DEEFB206FE98241E33369F86BAD4C"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_SpaceUSpace
+      </td>
+  <td class="duration">
+    0.075s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户数据传入有误","token":"36E2AC1A15D13E0268303DE0829EDD8E6187AAE5945A39FF158464318EE663CE9ED09DE4F4AD68B9787F8636DCB27B53"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_SpaceUser
+      </td>
+  <td class="duration">
+    0.048s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户数据传入有误","token":"8DBFB0CC906335E03D9F9B1EE4AD5943431979A9B4B875E912788CE048C0902917894B6CA692B2537C6D71068C5A9F6C"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_Succ
+      </td>
+  <td class="duration">
+    0.056s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"200","message":"OK","data":"登陆成功","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235F4BD0ACC33EAD3DE7EFC60CFA634F55BC"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_UsSpaceer
+      </td>
+  <td class="duration">
+    0.202s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户数据传入有误","token":"3BA4F437A2F4AAF3D694DDBE9B6FDFEDE8F7D829894C01E3C785360260C6EE92E664ED306EBFB5925034373D52E94AA7"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_UserSpace
+      </td>
+  <td class="duration">
+    0.194s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"200","message":"OK","data":"登陆成功","token":"4AB9E2ECE3DDB6F5B8909660BA2130DBCE1D44014047FE620B8C9BC4AFEFA22B7355DD4B84FD6923B8314DF60ABDD798"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_zoneidFail
+      </td>
+  <td class="duration">
+    0.065s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"406","message":"登陆验证失败","data":"用户数据传入有误","token":"8359C4F314911DCDD401B4336E79DC3CC8E19DDE87C2CA73F304193E41CBF3D602D35FCB98E5DA42DA3F6D5E5D86C429"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_zoneidMatch
+      </td>
+  <td class="duration">
+    0.120s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"200","message":"OK","data":"登陆成功","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235F297269F2EEC6D0565D7D7174AAED3CD4"}
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  login_zoneidNotmatch
+      </td>
+  <td class="duration">
+    0.059s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        请求地址: http://120.26.216.119:10000/api/v1/magicno
+                                请求地址: http://120.26.216.119:10000/api/v1/login
+                                返回结果: {"code":"200","message":"OK","data":"登陆成功","token":"A151C6491A380998293FE679782357E1AB1A0B45B74E3A2CD11A438BD2DF235F58FB3A600988256DE25096B4088093E5"}
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

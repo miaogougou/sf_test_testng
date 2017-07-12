@@ -4,6 +4,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+import java.io.File;
 
 import com.ipharmacare.sf.webtest.common.*;
 import com.ipharmacare.sf.webtest.common.ResponseEntity.StatusInfo;
@@ -16,7 +17,10 @@ public class postAuditCenterTest {
     
     @Test(groups = { "BaseCase1"})
     public void PostAuditCenter_Succ() throws IOException{
-    	filename="../../../../../../../doc/body.txt";
+        File directory = new File("");//参数为空 
+        String courseFile = directory.getCanonicalFile().getParent(); 
+    	filename=courseFile+"/doc/body.txt";
+        System.out.println(courseFile);
     	System.out.println(filename);
         resultCheck(filename,"200");
     }
