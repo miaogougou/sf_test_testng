@@ -42,7 +42,7 @@
       <suite-file path="getDrugPropertyListTest.xml"></suite-file>   
       <suite-file path="getChildIcd10Test.xml"></suite-file>   
       <suite-file path="getIcd10Test.xml"></suite-file>   
-      <suite-file path="getpayTypeListTest.xml"></suite-file>   
+      <suite-file path="getPayTypeListTest.xml"></suite-file>   
       <suite-file path="getZoneListTest.xml"></suite-file>   
       <suite-file path="getMsgTest.xml"></suite-file>   
       <suite-file path="getAuditPlanSettingTest.xml"></suite-file>   
