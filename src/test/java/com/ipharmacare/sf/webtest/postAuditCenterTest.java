@@ -16,7 +16,7 @@ public class postAuditCenterTest {
     
     @Test(groups = { "BaseCase1"})
     public void PostAuditCenter_Succ() throws IOException{
-    	filename="/Users/daijunjun/Documents/workspace/TestNGProject/src/testcase/body.txt";
+    	filename="../../../../../../../doc/body.txt";
     	System.out.println(filename);
         resultCheck(filename,"200");
     }
